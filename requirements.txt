@@ -1,5 +1,0 @@
-streamlit
-openai
-pillow
-docx2txt
-PyPDF2
