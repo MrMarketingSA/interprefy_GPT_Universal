@@ -10,7 +10,7 @@ import PyPDF2
 import base64
 
 # Set your OpenAI API key
-client = OpenAI(api_key="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")
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 st.set_page_config(page_title="Interprefy GPT-4o", layout="wide")
 st.markdown("<h1 style='text-align: center; color: #ff5d1f;'>🧠 Interprefy GPT-4o Assistant</h1>", unsafe_allow_html=True)
