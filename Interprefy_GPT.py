@@ -42,6 +42,6 @@ if send and user_input.strip():
             )
             reply = response.choices[0].message["content"]
             st.session_state.messages.append({"role": "assistant", "content": reply})
-            st.experimental_rerun()
+            st.rerun()
     except Exception as e:
         st.error(f"❌ Error: {str(e)}")
