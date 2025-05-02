@@ -10,10 +10,10 @@ import PyPDF2
 import base64
 
 # Load OpenAI API key from Streamlit secrets
-client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
-st.write("Loaded key:", st.secrets["OPENAI_API_KEY"][:8])  # Just for debugging
 
 st.set_page_config(page_title="Interprefy GPT-4o", layout="wide")
+st.write("Loaded key:", st.secrets["OPENAI_API_KEY"][:8])  # Just for debugging
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 st.markdown("<h1 style='text-align: center; color: #ff5d1f;'>🧠 Interprefy GPT-4o Assistant</h1>", unsafe_allow_html=True)
 st.markdown("<div style='text-align: center'><img src='https://www.interprefy.com/hubfs/interprefy-logo-white.svg' width='160'/></div>", unsafe_allow_html=True)
 st.markdown("### Chat with GPT-4o using text, images, or document files")
