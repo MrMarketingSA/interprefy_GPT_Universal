@@ -1,4 +1,3 @@
-st.write("Loaded key:", st.secrets["OPENAI_API_KEY"][:8])  # Should show: sk-proj-
 
 import streamlit as st
 import openai
@@ -12,6 +11,7 @@ import base64
 
 # Load OpenAI API key from Streamlit secrets
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+st.write("Loaded key:", st.secrets["OPENAI_API_KEY"][:8])  # Just for debugging
 
 st.set_page_config(page_title="Interprefy GPT-4o", layout="wide")
 st.markdown("<h1 style='text-align: center; color: #ff5d1f;'>🧠 Interprefy GPT-4o Assistant</h1>", unsafe_allow_html=True)
