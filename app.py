@@ -1,3 +1,4 @@
+st.write("Loaded key:", st.secrets["OPENAI_API_KEY"][:8])  # Should show: sk-proj-
 
 import streamlit as st
 import openai
